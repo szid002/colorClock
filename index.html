@@ -56,7 +56,10 @@ if (hours <= 9){
 var clockFace = (hours + ":" + minutes + ":" + seconds);
 
 document.getElementById('clock').innerHTML = clockFace;
-
+  document.body.style.background = hexColor;
+setTimeout(function() {
+    colorClock();
+  }, 1000);
 };
 
 colorClock()
